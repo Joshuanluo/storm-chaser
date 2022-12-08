@@ -1,38 +1,47 @@
 import React, { useState } from "react";
-import { Button, Form } from "react-bootstrap";
+import { db } from "./Firebase-config";
+import { addDoc, collection, Timestamp } from "firebase/firestore";
+import "../formpage.css";
 
 const FormPage = () => {
 	const [firstName, setFirstName] = useState("");
 	const [lastName, setLastName] = useState("");
 	const [email, setEmail] = useState("");
-
-	const _handleSubmit = (event) => {
+	const mailsCollectionRef = collection(db, "Mailing-List");
+	const _handleSubmit = async (event) => {
 		event.preventDefault();
-		console.log(firstName, lastName, email);
+		await addDoc(mailsCollectionRef, { first_name: firstName, last_name: lastName, email: email, time: Timestamp.fromDate(new Date()) });
 	};
 
 	return (
-		<div>
-			<Form onSubmit={_handleSubmit}>
-				<Form.Group className="mb-3">
-					<Form.Label>First Name</Form.Label>
-					<Form.Control type="text" placeholder="First Name" onChange={(e) => setFirstName(e.target.value)} />
-				</Form.Group>
+		<div className="formpage">
+			<div className="formpage_title">GET OUR WEEKLY 1-MINUTE NEWSLETTER</div>
+			<div className="formpage_content">
+				Join thousands of readers and receive weekly emails with warnings for QLD, NSW, ACT & VIC with Tropical Cyclone map Australia wide!
+			</div>
 
-				<Form.Group className="mb-3">
-					<Form.Label>Last Name</Form.Label>
-					<Form.Control type="text" placeholder="Last Name" onChange={(e) => setLastName(e.target.value)} />
-				</Form.Group>
-
-				<Form.Group className="mb-3" controlId="formBasicEmail">
-					<Form.Label>Email address</Form.Label>
-					<Form.Control type="email" placeholder="Enter email" onChange={(e) => setEmail(e.target.value)} />
-				</Form.Group>
-
-				<Button variant="primary" type="submit">
-					Submit
-				</Button>
-			</Form>
+			<form onSubmit={_handleSubmit}>
+				<label className="infolabel1">
+					First Name:
+					<input
+						className="infoinput"
+						required
+						type="text"
+						placeholder="First Name"
+						onChange={(e) => setFirstName(e.target.value)}
+						value={firstName}
+					/>
+				</label>
+				<label className="infolabel2">
+					Last Name:
+					<input className="infoinput" required type="text" placeholder="Last Name" onChange={(e) => setLastName(e.target.value)} value={lastName} />
+				</label>
+				<label className="infolabel3">
+					Email address:
+					<input className="infoinput" required type="email" placeholder="Enter email" onChange={(e) => setEmail(e.target.value)} value={email} />
+				</label>
+				<button className="infobtn">Submit</button>
+			</form>
 		</div>
 	);
 };
