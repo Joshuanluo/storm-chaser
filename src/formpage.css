@@ -1,0 +1,111 @@
+.formpage {
+	margin: 0 auto;
+	position: relative;
+	width: 390px;
+	height: 844px;
+	background: white;
+    border: 0.1em solid black;
+}
+.formpage_title {
+	position: absolute;
+	width: 199px;
+	height: 70px;
+	left: 95px;
+	top: 130px;
+
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	letter-spacing: 0.07em;
+
+	color: #000000;
+}
+.formpage_content {
+	position: absolute;
+	width: 307px;
+	height: 71px;
+	left: 41px;
+	top: 225px;
+
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 139.52%;
+	/* or 20px */
+	text-align: center;
+	letter-spacing: 0.1em;
+
+	color: #000000;
+}
+
+.infolabel1 {
+	position: absolute;
+	width: 139px;
+	height: 22px;
+	left: 38px;
+	top: 337px;
+    text-align: left;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 18px;
+
+	color: #000000;
+}
+.infolabel2 {
+	position: absolute;
+	width: 139px;
+	height: 22px;
+	left: 38px;
+	top: 415px;
+    text-align: left;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 18px;
+
+	color: #000000;
+}
+.infolabel3 {
+	position: absolute;
+	width: 139px;
+	height: 22px;
+	left: 38px;
+	top: 493px;
+    text-align: left;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 18px;
+
+	color: #000000;
+}
+
+.infoinput {
+	box-sizing: border-box;
+	position: relative;
+	width: 313px;
+	height: 35px;
+
+	top: 5px;
+
+	background: #ffffff;
+	border: 1px solid #d9d9d9;
+}
+
+.infobtn {
+	position: absolute;
+	width: 312px;
+	height: 47px;
+	left: 37px;
+	top: 611px;
+
+	background: #e4c978;
+}
