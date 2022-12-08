@@ -3,8 +3,12 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import ReactDOM from "react-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const DisplayNavbar = () => {
+  const element = <FontAwesomeIcon icon={faBars} className="white" />;
   return (
     <Navbar expand="xxl" className="mainNav">
       <Container>
@@ -15,7 +19,9 @@ const DisplayNavbar = () => {
             className="logo"
           />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          {element}
+        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#">Home</Nav.Link>
