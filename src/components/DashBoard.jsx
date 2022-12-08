@@ -19,8 +19,10 @@ const DashBoard = () => {
       {mails.map((mail) => {
         return (
           <div key={mail.id}>
-            <h1>{mail.first_name}</h1>
             <h1>{mail.id}</h1>
+            <h1>{mail.first_name}</h1>
+            <h1>{mail.last_name}</h1>
+            <h1>{mail.time}</h1>
           </div>
         );
       })}
