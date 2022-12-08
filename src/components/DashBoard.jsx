@@ -12,17 +12,15 @@ const DashBoard = () => {
       setMails(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
     };
     getMails();
-  }, [mails]);
+  }, []);
 
   return (
     <div>
       {mails.map((mail) => {
         return (
           <div key={mail.id}>
-            <h1>{mail.id}</h1>
             <h1>{mail.first_name}</h1>
-            <h1>{mail.last_name}</h1>
-            <h1>{mail.time}</h1>
+            <h1>{mail.id}</h1>
           </div>
         );
       })}

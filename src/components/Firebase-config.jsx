@@ -10,10 +10,11 @@ import {getFirestore} from '@firebase/firestore'
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_APIKEY,
   authDomain: process.env.REACT_APP_APIDOMAIN,
-  projectId: "storm-chaser-colab",
-  storageBucket: "storm-chaser-colab.appspot.com",
-  messagingSenderId: "291106799479",
-  appId: "1:291106799479:web:3dd114e3ef036bd75fab72"
+  projectId: "storm-chaser-143bc",
+  storageBucket: "storm-chaser-143bc.appspot.com",
+  messagingSenderId: "106080670921",
+  appId: "1:106080670921:web:47ebbe232b59fe85c02918",
+  measurementId: "G-PQY5ZD5917"
 };
 
 // Initialize Firebase
