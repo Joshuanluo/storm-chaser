@@ -1,93 +1,117 @@
 .flex {
-  display: block;
-  color: black;
+	display: block;
+	color: black;
 }
 .white {
-  color: white;
+	color: white;
 }
 h1.mainHeading {
-  font-weight: 700;
-  font-size: 4.5vw;
-  width: 100%;
+	font-weight: 700;
+	font-size: 4.5vw;
+	width: 100%;
+	text-align: center;
+
 }
 .article {
-  margin: 5px;
+	margin: 5px;
 }
 .grey {
-  background-color: #3c3e3b;
-  width: 100%;
+	background-color: #3c3e3b;
+	width: 100%;
 }
 .home p {
-  font-size: 3vw;
+	/* font-size: 3vw; */
+	font-size: 16px;
+	text-align: center;
+	
 }
 .black {
-  color: black;
+	color: black;
+	text-align: left;
+}
+#weather_news{
+	text-align: left;
 }
 .blueSubscribe {
-  width: 90%;
-  margin: 10px;
-  height: 47px;
+	width: 90%;
+	margin: 10px;
+	height: 47px;
 
-  background: #023da5;
-  font-size: 18px;
-  color: #ffffff;
-  max-width: 600px;
+	background: #023da5;
+	font-size: 18px;
+	color: #ffffff;
+	max-width: 290px;
+	border: 0.1em solid #023da5;
 }
 .yellowSubscribe {
-  width: 90%;
-  height: 47px;
+	width: 90%;
+	height: 47px;
 
-  background: #e4c978;
-  font-size: 18px;
-  color: black;
-  margin: 5px 10px 30px 10px;
-  max-width: 600px;
+	background: #e4c978;
+	font-size: 18px;
+	color: black;
+	margin: 5px 10px 30px 10px;
+	max-width: 290px;
+		border: 0.1em solid #e4c978;
 }
 @media only screen and (min-width: 600px) {
-  .flex {
-    display: flex;
-    color: black;
-  }
-  .white {
-    color: white;
-  }
-  h1.mainHeading {
-    font-weight: 700;
-    font-size: 32px;
-    width: 100%;
-    text-align: left;
-  }
-  .article {
-    margin: 5px;
-  }
-  .grey {
-    background-color: #3c3e3b;
-    width: 100%;
-  }
-  .home p {
-    font-size: 3vw;
-  }
-  .black {
-    color: black;
-  }
-  .blueSubscribe {
-    width: 90%;
-    margin: 10px;
-    height: 47px;
+	.flex {
+		display: flex;
+		color: black;
+	}
+	.white {
+		color: white;
+	}
+	h1.mainHeading {
+		font-weight: 700;
+		font-size: 32px;
+		width: 100%;
+		text-align: left;
+		padding-top: 80px;
+		padding-left: 37px;
+	}
 
-    background: #023da5;
-    font-size: 18px;
-    color: #ffffff;
-    max-width: 600px;
-  }
-  .yellowSubscribe {
-    width: 90%;
-    height: 47px;
+	.article {
+		margin: 5px;
+	}
+	.grey {
+		background-color: #3c3e3b;
+		width: 100%;
+	}
+	.home p {
+		/* font-size: 3vw; */
+		text-align: left;
+		font-size: 16px;
+		padding-left: 37px;
+	}
+	.everDay {
+		font-size: 16px;
+	}
+	.black {
+		text-align: left;
+		color: black;
+		padding-top: 20px;
+		padding-left: 40px;
+	}
+	.blueSubscribe {
+		width: 90%;
+		margin: 20px;
+		height: 47px;
 
-    background: #e4c978;
-    font-size: 18px;
-    color: black;
-    margin: 5px 10px 30px 10px;
-    max-width: 600px;
-  }
+		background: #023da5;
+		font-size: 18px;
+		color: #ffffff;
+		max-width: 290px;
+		border: 0.1em solid #023da5;
+	}
+	.yellowSubscribe {
+		width: 90%;
+		height: 47px;
+		border: 0.1em solid #e4c978;
+		background: #e4c978;
+		font-size: 18px;
+		color: black;
+		margin: 20px;
+		max-width: 290px;
+	}
 }

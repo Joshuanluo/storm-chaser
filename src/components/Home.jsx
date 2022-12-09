@@ -22,7 +22,7 @@ const Home = ({ toForm }) => {
         </button>
       </div>
       <div>
-        <p className="black">Home > Weather News & Extra Forecasts</p>
+        <p id="weather_news" className="black">Home &gt; Weather News & Extra Forecasts</p>
       </div>
       <div>
         <h4 className="black">Latest News</h4>
