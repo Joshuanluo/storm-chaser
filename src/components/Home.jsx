@@ -2,7 +2,7 @@ import React from "react";
 import NewsArticle from "./NewsArticle";
 import "../Home.css";
 
-const Home = () => {
+const Home = ({ toForm }) => {
   return (
     <div className="home">
       <div className=" grey">
@@ -12,7 +12,14 @@ const Home = () => {
         <button className="blueSubscribe">
           Subscribe to our Weather Service
         </button>
-        <button className="yellowSubscribe">Get our 1-minute newsletter</button>
+        <button
+          className="yellowSubscribe"
+          onClick={() => {
+            toForm();
+          }}
+        >
+          Get our 1-minute newsletter
+        </button>
       </div>
       <div>
         <p className="black">Home > Weather News & Extra Forecasts</p>
