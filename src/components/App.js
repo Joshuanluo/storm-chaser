@@ -4,6 +4,7 @@ import DashBoard from "./DashBoard";
 import FormPage from "./FormPage";
 import DisplayNavbar from "./Navbar";
 import Home from "./Home";
+import ThankPage from "./ThankPage";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <DashBoard />
       <Home />
       <FormPage />
+      <ThankPage />
     </div>
   );
 }
