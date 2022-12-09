@@ -1,31 +1,39 @@
 import React, { useEffect, useState } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import { db } from "./Firebase-config";
+import "../dashboard.css";
 
-const DashBoard = () => {
-  const [mails, setMails] = useState([]);
-  const mailCollectionRef = collection(db, "Mailing-List");
-  useEffect(() => {
-    const getMails = async () => {
-      const data = await getDocs(mailCollectionRef);
+const DashBoard = ({ toHome }) => {
+	const [mails, setMails] = useState([]);
+	const mailCollectionRef = collection(db, "Mailing-List");
+	useEffect(() => {
+		const getMails = async () => {
+			const data = await getDocs(mailCollectionRef);
+			console.log(data);
+			setMails(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+		};
+		getMails();
+	}, []);
 
-      setMails(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
-    };
-    getMails();
-  }, []);
-
-  return (
-    <div>
-      {mails.map((mail) => {
-        return (
-          <div key={mail.id}>
-            <h1>{mail.first_name}</h1>
-            <h1>{mail.id}</h1>
-          </div>
-        );
-      })}
-    </div>
-  );
+	return (
+		<div className="dash_main">
+			<h2>this is dashboard</h2>
+			<table>
+				<tr>
+					<td>Name</td>
+					<td>Email</td>
+				</tr>
+				{mails.map((mail) => {
+					return ( 
+						<tr key={mail.id}>
+							<td>{mail.first_name} {mail.last_name}</td>
+							<td>{mail.email}</td>
+						</tr>
+					);
+				})}
+			</table>
+		</div>
+	);
 };
 
 export default DashBoard;
