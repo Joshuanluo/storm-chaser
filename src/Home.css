@@ -11,7 +11,7 @@ h1.mainHeading {
   width: 100%;
 }
 .article {
-  margin: 0 auto;
+  margin: 5px;
 }
 .grey {
   background-color: #3c3e3b;
@@ -24,24 +24,70 @@ h1.mainHeading {
   color: black;
 }
 .blueSubscribe {
-  width: 95%;
+  width: 90%;
   margin: 10px;
   height: 47px;
-  left: 21px;
-  top: 270px;
+
   background: #023da5;
-  font-size: 20px;
+  font-size: 18px;
   color: #ffffff;
   max-width: 600px;
 }
 .yellowSubscribe {
-  width: 95%;
+  width: 90%;
   height: 47px;
-  left: 21px;
-  top: 270px;
+
   background: #e4c978;
-  font-size: 20px;
-  color: #ffffff;
-  margin: 10px;
+  font-size: 18px;
+  color: black;
+  margin: 5px 10px 30px 10px;
   max-width: 600px;
+}
+@media only screen and (min-width: 600px) {
+  .flex {
+    display: flex;
+    color: black;
+  }
+  .white {
+    color: white;
+  }
+  h1.mainHeading {
+    font-weight: 700;
+    font-size: 32px;
+    width: 100%;
+    text-align: left;
+  }
+  .article {
+    margin: 5px;
+  }
+  .grey {
+    background-color: #3c3e3b;
+    width: 100%;
+  }
+  .home p {
+    font-size: 3vw;
+  }
+  .black {
+    color: black;
+  }
+  .blueSubscribe {
+    width: 90%;
+    margin: 10px;
+    height: 47px;
+
+    background: #023da5;
+    font-size: 18px;
+    color: #ffffff;
+    max-width: 600px;
+  }
+  .yellowSubscribe {
+    width: 90%;
+    height: 47px;
+
+    background: #e4c978;
+    font-size: 18px;
+    color: black;
+    margin: 5px 10px 30px 10px;
+    max-width: 600px;
+  }
 }
