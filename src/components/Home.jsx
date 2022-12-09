@@ -2,7 +2,7 @@ import React from "react";
 import NewsArticle from "./NewsArticle";
 import "../Home.css";
 
-const Home = ({ toForm }) => {
+const Home = ({ toForm, toDashboard }) => {
   return (
     <div className="home">
       <div className=" grey">
