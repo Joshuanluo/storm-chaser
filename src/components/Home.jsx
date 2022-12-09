@@ -10,7 +10,12 @@ const Home = ({ toForm }) => {
         <p className="everDay">Every day you will "know" the weather...</p>
         <p>Join our premium weather service in QLD, NSW, ACT & VIC!</p>
         <div className="flex">
-          <button className="blueSubscribe">
+          <button
+            className="blueSubscribe"
+            onClick={() => {
+              toDashboard();
+            }}
+          >
             Subscribe to our Weather Service
           </button>
           <button
