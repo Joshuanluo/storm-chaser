@@ -4,7 +4,7 @@
 	width: 390px;
 	height: 844px;
 	background: white;
-    border: 0.1em solid black;
+	border: 0.1em solid black;
 }
 .formpage_title {
 	position: absolute;
@@ -48,7 +48,7 @@
 	height: 22px;
 	left: 38px;
 	top: 337px;
-    text-align: left;
+	text-align: left;
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 400;
@@ -63,7 +63,7 @@
 	height: 22px;
 	left: 38px;
 	top: 415px;
-    text-align: left;
+	text-align: left;
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 400;
@@ -78,7 +78,7 @@
 	height: 22px;
 	left: 38px;
 	top: 493px;
-    text-align: left;
+	text-align: left;
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 400;
@@ -108,4 +108,20 @@
 	top: 611px;
 
 	background: #e4c978;
+}
+
+.error-msg {
+	position: absolute;
+	width: 313px;
+	height: 37px;
+	left: 38px;
+	top: 565px;
+
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 15px;
+
+	color: #c00000;
 }
