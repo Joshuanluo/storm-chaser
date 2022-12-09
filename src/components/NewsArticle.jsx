@@ -6,7 +6,7 @@ const NewsArticle = ({ url, title }) => {
     <Card style={{ maxWidth: "40rem", width: "95%" }} className="article">
       <Card.Img variant="top" src={url} />
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
+        <Card.Title className="leftAlign">{title}</Card.Title>
       </Card.Body>
     </Card>
   );

@@ -9,23 +9,27 @@ const Home = ({ toForm }) => {
         <h1 className="mainHeading">Weather News & Extra Forecasts</h1>
         <p className="everDay">Every day you will "know" the weather...</p>
         <p>Join our premium weather service in QLD, NSW, ACT & VIC!</p>
-        <button className="blueSubscribe">
-          Subscribe to our Weather Service
-        </button>
-        <button
-          className="yellowSubscribe"
-          onClick={() => {
-            toForm();
-          }}
-        >
-          Get our 1-minute newsletter
-        </button>
+        <div className="flex">
+          <button className="blueSubscribe">
+            Subscribe to our Weather Service
+          </button>
+          <button
+            className="yellowSubscribe"
+            onClick={() => {
+              toForm();
+            }}
+          >
+            Get our 1-minute newsletter
+          </button>
+        </div>
       </div>
       <div>
-        <p id="weather_news" className="black">Home &gt; Weather News & Extra Forecasts</p>
+        <p id="weather_news" className="black padding">
+          Home &gt; Weather News & Extra Forecasts
+        </p>
       </div>
       <div>
-        <h4 className="black">Latest News</h4>
+        <h4 className="black padding">Latest News</h4>
         <div className=" flex">
           <NewsArticle
             title="Is climate change  making the weather worse ?"

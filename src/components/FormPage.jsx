@@ -4,10 +4,12 @@ import { addDoc, collection, Timestamp } from "firebase/firestore";
 import "../formpage.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelopeOpenText } from "@fortawesome/free-solid-svg-icons";
-import BackIcon from "../BackIcon.svg";
+import closeIcon from "../closeIcon.svg";
 
 const FormPage = ({ toHome, toThankyou }) => {
-  const element = <FontAwesomeIcon icon={faEnvelopeOpenText} size="6x" />;
+  const element = (
+    <FontAwesomeIcon icon={faEnvelopeOpenText} size="4x" className="black" />
+  );
 
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -42,8 +44,14 @@ const FormPage = ({ toHome, toThankyou }) => {
 
   return (
     <div className="formpage">
-      <img src={BackIcon} alt="Back Icon" onClick={() => toHome()} />
       {element}
+      <img
+        src={closeIcon}
+        className="close_icon"
+        onClick={() => {
+          toHome();
+        }}
+      />
       <div className="formpage_title">GET OUR WEEKLY 1-MINUTE NEWSLETTER</div>
       <div className="formpage_content">
         Join thousands of readers and receive weekly emails with warnings for
@@ -57,7 +65,7 @@ const FormPage = ({ toHome, toThankyou }) => {
             className="infoinput"
             required
             type="text"
-            placeholder="First Name"
+            placeholder="John"
             onChange={(e) => setFirstName(e.target.value)}
             value={firstName}
           />
@@ -68,7 +76,7 @@ const FormPage = ({ toHome, toThankyou }) => {
             className="infoinput"
             required
             type="text"
-            placeholder="Last Name"
+            placeholder="Doe"
             onChange={(e) => setLastName(e.target.value)}
             value={lastName}
           />
@@ -79,12 +87,12 @@ const FormPage = ({ toHome, toThankyou }) => {
             className="infoinput"
             required
             type="text"
-            placeholder="Enter email"
+            placeholder="example@gmail.com"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
           />
         </label>
-        <button className="infobtn">Submit</button>
+        <button className="infobtn">Get Our Newsletter</button>
         <div className="error-msg">{error}</div>
       </form>
     </div>
