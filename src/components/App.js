@@ -9,7 +9,8 @@ function App() {
   return (
     <div className="App">
       <DisplayNavbar />
-      {/* <DashBoard /> */}
+      <DashBoard />
+      <Home />
       <FormPage />
     </div>
   );
