@@ -41,7 +41,7 @@ function App() {
     return (
       <div className="App">
         <DisplayNavbar />
-        <Home toForm={toForm} />
+        <Home toForm={toForm} toDashboard={toDashboard} />
       </div>
     );
   }
