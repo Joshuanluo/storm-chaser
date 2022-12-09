@@ -1,0 +1,47 @@
+.flex {
+  display: block;
+  color: black;
+}
+.white {
+  color: white;
+}
+h1.mainHeading {
+  font-weight: 700;
+  font-size: 4.5vw;
+  width: 100%;
+}
+.article {
+  margin: 0 auto;
+}
+.grey {
+  background-color: #3c3e3b;
+  width: 100%;
+}
+.home p {
+  font-size: 3vw;
+}
+.black {
+  color: black;
+}
+.blueSubscribe {
+  width: 95%;
+  margin: 10px;
+  height: 47px;
+  left: 21px;
+  top: 270px;
+  background: #023da5;
+  font-size: 20px;
+  color: #ffffff;
+  max-width: 600px;
+}
+.yellowSubscribe {
+  width: 95%;
+  height: 47px;
+  left: 21px;
+  top: 270px;
+  background: #e4c978;
+  font-size: 20px;
+  color: #ffffff;
+  margin: 10px;
+  max-width: 600px;
+}

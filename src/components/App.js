@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <DisplayNavbar />
       {/* <DashBoard /> */}
-      <FormPage />
+      <Home />
     </div>
   );
 }
